@@ -36,7 +36,7 @@ class PersonaTest {
 
 	@Test
 	void testGetNombre() {
-		assertEquals("Paco", p.getNombre());
+		assertEquals("Paco", p.getNombre() );
 	}
 
 	@Test
