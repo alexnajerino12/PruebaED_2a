@@ -42,7 +42,7 @@ class CursoTest {
 
 	@Test
 	void testEstaRegistrado() {
-		c1.estaRegistrado(alex.getDni());
+		c1.estaRegistrado(alex.getDni()) ;
 	}
 
 	@Test
