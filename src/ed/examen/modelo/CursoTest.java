@@ -46,7 +46,7 @@ class CursoTest {
 	}
 
 	@Test
-	void testCurso() {
+	void testCurso()  {
 		
 	}
 
