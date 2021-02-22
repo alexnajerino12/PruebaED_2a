@@ -13,26 +13,22 @@ class CursoTest {
 	
 	@Test
 	void testEliminarAlumno() {
-		c1.aniadirAlumno(alex);
-			int inicial=c1.numeroAlumnos();
-			try {
-				c1.eliminarAlumno(alex.getDni());
-			} catch (Exception e) {
-				
-			}
-			int ultimo=c1.numeroAlumnos();
-			assertEquals(inicial, ultimo+1);
+		boolean excepcion=false;
+		try {
+			c1.eliminarAlumno("123456789");
+		}catch (Exception e) {
+			excepcion= true;
+		}
+		assertFalse(excepcion);
 			
 		//clase invalida	
-			c1.aniadirAlumno(pepe);
-			int antes=c1.numeroAlumnos();
+			excepcion= false;
 			try {
-				c1.eliminarAlumno(pepe.getDni());
-			} catch (Exception e) {
-				
+				c1.eliminarAlumno("123456");
+			}catch (Exception e) {
+				excepcion = true;
 			}
-			int despues=c1.numeroAlumnos();
-			assertEquals(antes, despues+1);
+			assertTrue(excepcion);
 	}
 
 	@Test
