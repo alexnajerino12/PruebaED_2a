@@ -12,7 +12,7 @@ class CursoTest {
 	
 	
 	@Test
-	void testEliminarAlumno() {
+	void testEliminarAlumno()  {
 		boolean excepcion=false;
 		try {
 			c1.eliminarAlumno("123456789");
