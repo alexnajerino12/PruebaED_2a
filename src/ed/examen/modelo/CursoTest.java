@@ -52,7 +52,7 @@ class CursoTest {
 
 	@Test
 	void testNumeroAlumnos() {
-		int longitud=c1.numeroAlumnos();
+		int longitud=c1.numeroAlumnos() ;
 		assertEquals(longitud, 0);
 	}
 }
