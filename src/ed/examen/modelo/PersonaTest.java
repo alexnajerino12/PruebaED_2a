@@ -47,7 +47,7 @@ class PersonaTest {
 
 	@Test
 	void testGetApellido1() {
-		assertEquals("pico", p.getApellido1());
+		assertEquals("pico", p.getApellido1() );
 	}
 
 	@Test
