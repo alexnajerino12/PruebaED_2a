@@ -47,7 +47,10 @@ class CursoTest {
 
 	@Test
 	void testCurso()  {
-		
+		boolean comprobar=false;
+		if(!c1.numeroAlumnos().equals(null))
+			comprobar=true;
+		assertTrue(comprobar);
 	}
 
 	@Test
